@@ -1,0 +1,32 @@
+.TodoItem{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #1f1c1c;
+}
+
+.Icon-check:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.Icon-delete:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.TodoItem-p--complete{
+    text-decoration: line-through;
+}
+
+.Icon-check--active{
+    color: lawngreen;
+}
+
+p{
+    font-weight: lighter;
+    color: #decccc;
+}

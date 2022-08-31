@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Londrina+Solid:wght@100;300&family=Raleway:wght@100;200;300;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #191919;
+    display: grid;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  
+.mainContainer{
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 400px;
+  min-height: 700px;
+  height: auto;
+  background-color: #222020;  
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.mainContent{
+  position: relative;
+  z-index: 1;
+  font-family: 'Londrina Solid', cursive;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+}
+
+.mainContainer::before{
+  content: '';
+  width: 100px;
+  min-height: 1000px;
+  left: 150px;
+  top: -40px;
+  position: absolute;
+  background: linear-gradient(#00e5ff, #b400fb);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+.mainContainer::after{
+  content: '';
+  position: absolute;
+  background-color: #222020;  
+  inset: 6px;
+  border-radius: 5px;
+}
+
+
+
+/* .Icon-margarita{
+  animation: rotation 10s infinite linear;
+  width: 50px;
+  
+}
+  
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(300deg);
+  }
+} */
+
+  
+

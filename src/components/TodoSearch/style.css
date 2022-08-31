@@ -1,0 +1,19 @@
+.TodoSearch{
+    min-width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    background: #00e5ff;
+    font-family: 'Londrina Solid', cursive;
+    border: none;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.TodoSearch::placeholder{
+    color: black;
+}
+
+.TodoSearch:focus{
+    outline: none ;
+}
