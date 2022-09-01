@@ -88,5 +88,9 @@ body{
   }
 } */
 
-  
+@media (max-width: 480px) {
+  .mainContainer{
+    width: 350px;
+  }
+}
 

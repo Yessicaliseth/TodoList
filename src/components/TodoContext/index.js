@@ -17,7 +17,9 @@ function TodoProvider(props) {
       const totalTodos = todos.length;
     
       let searchedTodos =[];
-      
+
+
+
       if(!searchValue.length >= 1){
         searchedTodos = todos;
       } else {
@@ -63,7 +65,7 @@ function TodoProvider(props) {
             deleteTodo,
             openModal,
             setOpenModal,
-            completeTodo
+            completeTodo,
         }}>
 
             {props.children}

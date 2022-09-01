@@ -7,6 +7,7 @@ import { TodoItem } from '../TodoItem';
 import { TodoForm } from '../TodoForm';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
+import { isEmpty } from 'lodash'
 
 function AppUI(){
   const {
@@ -17,8 +18,11 @@ function AppUI(){
         deleteTodo,
         openModal,
         setOpenModal,
-
+        searchValue,
       } = React.useContext(TodoContext)
+
+
+
     return(
     <div className='mainContainer'>
       <div className='mainContent'>
@@ -33,7 +37,15 @@ function AppUI(){
         <TodoList>
           {loading && <p>Estamos cargando, No te desesperes................</p>}
           {error && <p>Desesperate, Hubo un error................</p>}
-          {(!loading && !searchedTodos.length) && <p>Crea tu primer Tarea</p>}
+          {
+            (!loading && isEmpty(searchedTodos) && searchValue.length) ?
+            <p>No hay resultados de tu busqueda</p>
+            : 
+            (!loading && isEmpty(searchedTodos) && !searchValue.length) &&
+            <p>Crea tu primer tarea</p>
+          }
+
+          
 
           {searchedTodos.map(todo => (
           <TodoItem 
