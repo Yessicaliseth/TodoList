@@ -21,8 +21,6 @@ function AppUI(){
         searchValue,
       } = React.useContext(TodoContext)
 
-
-
     return(
     <div className='mainContainer'>
       <div className='mainContent'>

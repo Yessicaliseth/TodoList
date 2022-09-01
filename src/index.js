@@ -7,7 +7,6 @@ const rootElement = document.getElementById('root');
 const root = ReactDOMClient.createRoot(rootElement)
 root.render(
      <App />,
-     
 );
 
 
