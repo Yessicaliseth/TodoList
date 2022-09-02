@@ -3,19 +3,19 @@
   "name": "App Mis tareas",
   "icons": [
     {
-      "src": "/documento.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/7891/7891172.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     },
     {
-      "src": "/documento.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/7891/7891172.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/documento.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/7891/7891172.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "700x700"
     }
   ],
   "start_url": ".",
